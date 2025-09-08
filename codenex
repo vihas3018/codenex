@@ -1,0 +1,22 @@
+marks=[]
+subject=["chemistry","biology","programming","maths","physics"]
+total=0
+for i in subject:
+    m=int(input(f"enter marks of {i}"))
+    if 0 <= m <= 100:
+        marks.append(m)
+        total=total+m
+    else:
+        print("invalid marks.marks should be between 0 and 100")
+avg=total/5
+if avg>= 90:
+    grade = "A"
+elif avg>= 75:
+    grade = "B"
+elif avg>= 75:
+    grade = "C"
+else:
+    grade = "F"
+print("totalmarks:",total)
+print("Avgrage marks:",avg)
+print("Grade:",grade)
